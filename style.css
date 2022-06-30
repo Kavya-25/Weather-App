@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@300;500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1476044591369-74ee6ac6899c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.card{
+    background: rgba(11, 11, 11, 0.883);
+    box-shadow: 0 8px 32px 0 rgba(15, 16, 16, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    padding: 2rem;
+   border-radius: 10px;
+   margin: 1rem;
+   /* max-width: 420px; */
+   width: 30%;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search_bar{
+border: none;
+outline: none;
+/* border-bottom: 1px solid #fff; */
+border-radius: 20px;
+background-color: #474747;
+color: white;
+padding: 5px 10px;
+width: 70%;
+}
+#searchBtn{
+    background-color:#474747;
+    border: none;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+  margin:0 1rem;
+}
+#searchBtn:hover{
+    background-color: #706f6f;
+}
+.city{
+    margin: 1rem 0;
+}
+.temp{
+    font-size:2rem;
+    font-weight: 900;
+    margin: 1rem 0;
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.descr{
+    text-transform: capitalize;
+}
