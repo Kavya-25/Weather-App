@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;400&family=Roboto:wght@300;500&display=swap');
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
     display: flex;
@@ -8,22 +12,55 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1476044591369-74ee6ac6899c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
+    background-image: linear-gradient(to bottom, rgba(35, 35, 37, 0.798), rgba(32, 30, 32, 0.86)),
+    url(https://images.pexels.com/photos/958982/pexels-photo-958982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 }
 .card{
-    background: rgba(11, 11, 11, 0.883);
-    box-shadow: 0 8px 32px 0 rgba(15, 16, 16, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    padding: 2rem;
-   border-radius: 10px;
    margin: 1rem;
-   /* max-width: 420px; */
-   width: 30%;
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+   align-items: center;
+   width: 60%;
+   height: 80%;
+   background-image: url(https://images.pexels.com/photos/958982/pexels-photo-958982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+.card-left{
+    height:100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.card-right{
+    height: 100%;
+    width: 45%;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(10, 31, 44, 0.595);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px ); 
+}
+.conditions{
+    padding: 15px 10px;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  border-top: 1px solid rgb(165, 165, 165);
+    
+}
+p{
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+.conditions div{
+    margin: 1rem 0;
 }
 .search{
     display: flex;
@@ -33,20 +70,17 @@ body{
 #search_bar{
 border: none;
 outline: none;
-/* border-bottom: 1px solid #fff; */
-border-radius: 20px;
-background-color: #474747;
+border-bottom: 1px solid #fff;
+background: transparent;
 color: white;
 padding: 5px 10px;
-width: 70%;
+width: 90%;
+font-size: 1.2rem;
 }
 #searchBtn{
-    background-color:#474747;
+    background-color:transparent;
     border: none;
-    width: 40px;
-    height: 40px;
     outline: none;
-    border-radius: 50%;
     font-size: 1.2rem;
     cursor: pointer;
     color: white;
@@ -56,18 +90,19 @@ width: 70%;
     background-color: #706f6f;
 }
 .city{
-    margin: 1rem 0;
+    margin: 3rem 0;
+    font-size: 1.1rem;
 }
 .temp{
-    font-size:2rem;
+    font-size:2.5rem;
     font-weight: 900;
-    margin: 1rem 0;
+    margin: 3rem 0;
 }
-.flex{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+
 .descr{
     text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+img{
+    margin-bottom: -1rem;
 }
