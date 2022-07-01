@@ -106,3 +106,16 @@ font-size: 1.2rem;
 img{
     margin-bottom: -1rem;
 }
+@media screen and (max-width:900px) {
+    .card{
+        flex-direction: column;
+        width: 90%;
+    }
+    .card-right{
+        width: 100%;
+    }
+    .card-left{
+        flex-direction: column;
+        align-items: center;
+    }
+}
